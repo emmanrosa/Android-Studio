@@ -1,15 +1,14 @@
 # assignment-8-inventory-app-emmanrosa
 
-# Assignment 8: Inventory App
-# Full Name: Emmanuel Rosario 
-# Student ID: 01107549
+# Inventory App
+# Emmanuel Rosario 
 
 # Screenshot
-![test image](/Screenshot1.png?raw=true "test image")
-![test image](/Screenshot2.png?raw=true "test image")
-![test image](/Screenshot3.png?raw=true "test image")
-![test image](/Screenshot4.png?raw=true "test image")
-![test image](/Screenshot5.png?raw=true "test image")
-![test image](/Screenshot6.png?raw=true "test image")
+![test image](https://github.com/emmanrosa/Android-Studio/blob/master/assignment-8-inventory-app-emmanrosa-master/Screenshot1.png)
+![test image1](https://github.com/emmanrosa/Android-Studio/blob/master/assignment-8-inventory-app-emmanrosa-master/Screenshot2.png)
+![test image2](https://github.com/emmanrosa/Android-Studio/blob/master/assignment-8-inventory-app-emmanrosa-master/Screenshot3.png)
+![test image3](https://github.com/emmanrosa/Android-Studio/blob/master/assignment-8-inventory-app-emmanrosa-master/Screenshot4.png)
+![test image4](https://github.com/emmanrosa/Android-Studio/blob/master/assignment-8-inventory-app-emmanrosa-master/Screenshot5.png)
+![test image5](https://github.com/emmanrosa/Android-Studio/blob/master/assignment-8-inventory-app-emmanrosa-master/Screenshot6.png)
 
 
