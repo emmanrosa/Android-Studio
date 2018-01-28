@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <!-- Title -->
+        <EditText
+            android:id="@+id/title_edit"
+            android:hint="@string/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusDown="@+id/price_edit" />
+
+        <!-- ISBN -->
+        <EditText
+            android:id="@+id/ISBN_edit"
+            android:hint="@string/isbn_13"
+            android:inputType="number"
+            android:maxLength="13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusDown="@+id/price_edit"
+            android:layout_below="@id/title_edit"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ISBN_edit"
+            android:id="@+id/add_price_condition_layout">
+
+            <!-- Price -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="8"
+                android:id="@+id/add_price_layout"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:id="@+id/books_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pricedollarsign" />
+
+                <EditText
+                    android:id="@+id/book_price_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:nextFocusDown="@+id/price_edit" />
+
+            </LinearLayout>
+
+            <!-- Condition -->
+            <LinearLayout
+                android:id="@+id/add_condition_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true">
+
+                <!-- Label -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/condition" />
+
+                <!-- Input field -->
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <!-- Gender drop-down spinner -->
+                    <Spinner
+                        android:id="@+id/spinner_condition"
+                        android:layout_height="48dp"
+                        android:layout_width="wrap_content"
+                        android:entries="@array/array_condition_options"
+                        android:spinnerMode="dropdown"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- UPLOAD IMAGE TEXT -->
+        <TextView
+            android:id="@+id/Or"
+            android:text="@string/or"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_price_condition_layout"/>
+
+        <!-- Image when uploaded -->
+        <ImageView
+            android:id="@+id/image_view"
+            android:rotation="90"
+            android:contentDescription="@string/item"
+            android:layout_below="@id/Or"
+            style="@style/fullWidthImage" />
+
+        <!-- bottom buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_view"
+            style="?android:attr/buttonBarStyle">
+
+            <!-- select image -->
+            <Button
+                android:id="@+id/select_image"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:onClick="openImageSelector"
+                android:text="@string/select_image"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <!-- get title -->
+            <Button
+                android:id="@+id/button_process"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/gettitle"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+

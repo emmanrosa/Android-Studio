@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Quiz</string>
+
+    <!-- Hint text display in the empty field for the user's name -->
+    <string name="name">Enter Your Name</string>
+
+    <!--first question and answers-->
+    <string name="question1">1. Who was the 1st president of the USA?</string>
+    <string name="q1_1">John Adams</string>
+    <string name="q1_2">George Washington</string>
+    <string name="q1_3">Abraham Lincoln</string>
+
+    <!--second question and answers-->
+    <string name="question2">2. 2 + 3 =?</string>
+    <string name="q2_1">6</string>
+    <string name="q2_2">4</string>
+    <string name="q2_3">5</string>
+
+    <!--third question and answers-->
+    <string name="question3">3. What month is Christmas in?</string>
+    <string name="q3_1">December</string>
+    <string name="q3_2">July</string>
+    <string name="q3_3">March</string>
+
+    <!--fourth question and answers-->
+    <string name="question4">4. Convert 8 to binary:</string>
+    <string name="q4_1">1001</string>
+    <string name="q4_2">1011</string>
+    <string name="q4_3">1000</string>
+
+    <!--fifth question and answers-->
+    <string name="question5">5. Convert 1011 to decimal:</string>
+    <string name="q5_1">11</string>
+    <string name="q5_2">3</string>
+    <string name="q5_3">8</string>
+
+    <!--sixth question and answers-->
+    <string name="question6">6. Which car manufacturer has this logo?</string>
+    <string name="q6_1">Honda</string>
+    <string name="q6_2">Hyundai</string>
+    <string name="q6_3">Rolls-Royce</string>
+
+    <!--seventh question and answers-->
+    <string name="question7">7. How many ounces in a pound?</string>
+    <string name="q7_1">32</string>
+    <string name="q7_2">16</string>
+    <string name="q7_3">8</string>
+
+    <!--eighth question and answers-->
+    <string name="question8">8. What is 2^3?</string>
+    <string name="question8_hint">Two answers possible</string>
+    <string name="q8_1">6</string>
+    <string name="q8_2">Eight</string>
+    <string name="q8_3">24</string>
+    <string name="q8_4">8</string>
+    <string name="q8_5">No idea.</string>
+
+    <!--submit quiz -->
+    <string name="sub">Submit </string>
+    <string name="clear">Clear All </string>
+</resources>

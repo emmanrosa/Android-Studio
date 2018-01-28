@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <!-- book image -->
+    <ImageView
+        android:id="@+id/image_list1"
+        android:contentDescription="@string/book"
+        style="@style/fullWidthImage" />
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/bookname1"
+        android:layout_width="match_parent"
+        android:text="@string/title"
+        android:textStyle="bold"
+        style="@style/listItemStyle" />
+
+    <!-- isbn -->
+    <TextView
+        android:id="@+id/isbn1"
+        android:layout_width="match_parent"
+        style="@style/listItemStyle"
+        tools:text="978"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- condition -->
+        <TextView
+            android:id="@+id/condd"
+            android:layout_width="wrap_content"
+            style="@style/listItemStyle"
+            android:layout_alignParentLeft="true"
+            tools:text="new"/>
+
+        <!-- price -->
+        <TextView
+            android:id="@+id/price1"
+            android:layout_width="wrap_content"
+            style="@style/listItemStyle"
+            android:layout_alignParentRight="true"
+            tools:text="$100"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

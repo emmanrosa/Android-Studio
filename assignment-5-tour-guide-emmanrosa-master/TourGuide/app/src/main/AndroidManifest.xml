@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.emmanuel.tourguide">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cityHallActivity"
+            android:label="@string/category_city" />
+        <activity
+            android:name=".eduActivity"
+            android:label="@string/category_education" />
+        <activity
+            android:name=".HostActivity"
+            android:label="@string/category_hospital" />
+        <activity
+            android:name=".ParkActivity"
+            android:label="@string/category_park" />
+        <activity
+            android:name=".restActivity"
+            android:label="@string/category_restaurant"/>
+    </application>
+
+</manifest>

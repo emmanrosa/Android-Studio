@@ -1,0 +1,27 @@
+<resources>
+    <!--Title for the application -->
+    <string name="app_name">TourGuide</string>
+
+    <!--Title for the application -->
+    <string name="city">\t\tWelcome To The City
+        \n\t\t\t\t\t\t\t\t\t\t\t of Lawrence</string>
+
+    <!-- Category name for the city [CHAR LIMIT=20] -->
+    <string name="category_city">City Hall</string>
+
+    <!-- Category name for education [CHAR LIMIT=20] -->
+    <string name="category_education">Schools</string>
+
+    <!-- Category name for the parks [CHAR LIMIT=20] -->
+    <string name="category_park">Parks</string>
+
+    <!-- Category name for the hospital [CHAR LIMIT=20] -->
+    <string name="category_hospital">Hospital</string>
+
+    <!-- Category name for the restaurants [CHAR LIMIT=20] -->
+    <string name="category_restaurant">Restaurants</string>
+
+    <string name="phone">Phone: </string>
+    <string name="address">Address: </string>
+
+</resources>

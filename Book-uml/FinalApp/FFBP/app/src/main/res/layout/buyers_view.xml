@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <!-- book image -->
+        <ImageView
+            android:id="@+id/image_buyer"
+            style="@style/fullWidthImage"
+            android:gravity="center"
+            android:contentDescription="@string/image_buyer" />
+
+        <!-- title -->
+        <TextView
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            style="@style/listItemStyle"
+            android:text="@string/title"/>
+
+        <!-- ISBN -->
+        <TextView
+            android:id="@+id/isbn_view"
+            android:layout_width="match_parent"
+            style="@style/listItemStyle" />
+
+        <!-- condition -->
+        <TextView
+            android:id="@+id/cond_view"
+            android:layout_width="match_parent"
+            style="@style/listItemStyle" />
+
+        <!-- price -->
+        <TextView
+            android:id="@+id/price_view"
+            android:layout_width="match_parent"
+            style="@style/listItemStyle" />
+
+        <!-- make an offer -->
+        <Button
+            android:id="@+id/buttonsend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/make_an_offer"
+            style="?android:attr/buttonBarButtonStyle" />
+
+</LinearLayout>
+</ScrollView>

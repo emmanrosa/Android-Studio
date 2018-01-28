@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- search for books -->
+    <SearchView
+        android:id="@+id/searchbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="@string/search_hint"
+        android:iconifiedByDefault="false">
+        <requestFocus />
+    </SearchView>
+
+    <!-- display all button -->
+    <Button
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/display_all"
+        android:layout_below="@id/searchbook"
+        style="?android:attr/buttonBarButtonStyle"
+        android:textSize="18sp"/>
+
+    <!-- list of sub items, uses list_item xml -->
+    <ListView
+        android:id="@+id/list"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/all">
+    </ListView>
+
+
+</RelativeLayout>

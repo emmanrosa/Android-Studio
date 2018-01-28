@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <!-- info, title and ISBN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/edit_name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info" />
+
+            <TextView
+                    android:id="@+id/title_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/n_a"
+                    />
+
+                <TextView
+                    android:id="@+id/ISBN_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/linearLayout"
+            android:id="@+id/price_update_layout">
+
+            <TextView
+                android:id="@+id/new_books_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pricedollarsign" />
+
+            <EditText
+                android:id="@+id/book_price_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <!-- condition -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/price_update_layout"
+            android:id="@+id/condition_layout">
+
+            <TextView
+                android:text="@string/condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+                <Spinner
+                    android:id="@+id/spinner_condition_update"
+                    android:layout_height="48dp"
+                    android:layout_width="wrap_content"
+                    android:entries="@array/array_condition_options"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+
+        <!-- image -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/condition_layout"
+            android:id="@+id/image_layout">
+
+            <TextView
+                android:id="@+id/image_title_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/image" />
+
+            <ImageView
+                android:id="@+id/image_view_update"
+                android:contentDescription="@string/image_title_update"
+                style="@style/fullWidthImage" />
+        </LinearLayout>
+
+        <!-- update/accept buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="?android:attr/buttonBarStyle"
+            android:layout_below="@+id/image_layout">
+
+            <Button
+                android:id="@+id/buttonUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/update"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/delete"
+                style="?android:attr/buttonBarButtonStyle" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

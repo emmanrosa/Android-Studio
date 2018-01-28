@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "291522225891",
+    "firebase_url": "https://first-firebase-project-43280.firebaseio.com",
+    "project_id": "first-firebase-project-43280",
+    "storage_bucket": "first-firebase-project-43280.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291522225891:android:f8b04eb90c89062b",
+        "android_client_info": {
+          "package_name": "brett_lundy.com.ffbp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291522225891-1h801emqj1261d97s7gce6e6okqlkasm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9dxYGKq9uSZoTT5hzm3FnX4oM9FwKVXc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
