@@ -1,6 +1,5 @@
-# Assignment 6: Music Mash 
-# Full Name: Emmanuel Rosario 
-# Student ID: 01107549
+# Music Mash 
+# Emmanuel Rosario 
 
 Create a new project Music Mash
 Main app shows a list of “scenarios” when you will listen to the music
