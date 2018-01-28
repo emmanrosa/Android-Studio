@@ -1,6 +1,5 @@
-# Assignment 4: Quiz App 
-# Full Name: Emmanuel Rosario 
-# Student ID: 01107549
+#  Quiz App 
+#  Emmanuel Rosario 
 
 Develop a quiz app
 
